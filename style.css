@@ -1,0 +1,168 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(0.5rem, 0.5vw + 0.2rem, 1.2rem);
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+:root {
+  --primary: #0055ff;
+  --secondary: #ff5500;
+  --text: #222;
+  --bg: #fff;
+  --radius: 0.5rem;
+}
+
+/*FIM RESET CSS*/
+
+/* Colors
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+*/
+
+
+/*FONTES*/
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/inter-v19-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-v19-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-v19-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*ESTILIZACAO*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 8%) ;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.caixacentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 12%) ;
+    height: auto;
+    width: clamp(250px, 50vw, 450px);
+    color: hsl(0, 0%, 100%);
+    padding: 3rem;
+    border-radius: 1rem;
+    
+}
+
+
+.avatarp{
+  border-radius: 50%;
+  height: 9rem;
+  margin: 1.5rem;
+}
+
+.nome{
+  font-size: clamp(2.4rem, 1rem + 1vw, 4rem);
+  font-weight: 600;
+}
+
+.cidade {
+  color: hsl(75, 94%, 57%) ;
+  padding: 0.5rem;
+    }
+
+.profissao{
+  font-weight: 1;
+  padding: 2rem;
+}
+
+h6{
+  background-color: hsl(0, 0%, 20%);
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  
+}
+
+h6:hover{
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+}
